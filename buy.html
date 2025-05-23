@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy - Nebula Software</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark-theme">
+
+  <nav class="navbar">
+    <div class="logo">Nebula</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="redeem.html">Redeem</a></li>
+      <li><a href="buy.html" class="active">Buy</a></li>
+    </ul>
+  </nav>
+
+  <main class="container center-content">
+    <h1 class="fade-in">Buy Nebula - $19.99</h1>
+    <p class="fade-in delay-1">Lifetime access to all features & updates.</p>
+
+    <div class="fade-in delay-2" style="margin-top: 2rem;">
+      <label for="paymentMethod" style="font-size: 1.1em;">Choose your payment method:</label>
+      <select id="paymentMethod" class="input-field">
+        <option value="">-- Select --</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="crypto">Crypto</option>
+      </select>
+
+      <button class="btn neon-button" onclick="handlePayment()">Continue</button>
+      <div id="paymentStatus" class="message hidden">🚧 Payment system is currently down. Please check back later.</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

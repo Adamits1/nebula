@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Nebula Software</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark-theme">
+
+  <nav class="navbar">
+    <div class="logo">Nebula</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="redeem.html">Redeem</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <main class="container center-content">
+    <h1 class="fade-in">Customer Dashboard</h1>
+    <p class="fade-in delay-1">Thank you for your purchase! Enjoy!</p>
+    <p class="fade-in delay-1">⚠️ Make sure to uninstall all antiviruses and disable windows defender before downloading! ⚠️</p>
+
+
+
+    <br>
+
+    <a href="loader.exe" class="btn neon-button fade-in delay-2" download>Download Nebula Loader</a>
+    <br>
+    <br>
+    <button id="tutorialBtn" class="btn neon-button fade-in delay-3">View Tutorial</button>
+  </main>
+
+  <!-- Modal Structure -->
+  <div id="tutorialModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-content">
+      <button id="closeModal" class="close" aria-label="Close modal">&times;</button>
+      <h2 id="modalTitle">Tutorial On How To Setup Nebula</h2>
+      <p>
+        Welcome to the Nebula Setup tutorial!<br><br>
+        1. Uninstall all antivirus softwares and disable all windows defender options.<br>
+        2. Download the loader by clicking the download button on the dashboard.<br>
+        3. Open Roblox and load into a game.<br>
+        4. Open the loader and enter your license key.<br>
+        5. Wait for it to inject and your done.<br><br>
+        Enjoy!
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Modal logic with smooth enter/exit animations
+    const modal = document.getElementById('tutorialModal');
+    const btn = document.getElementById('tutorialBtn');
+    const closeBtn = document.getElementById('closeModal');
+
+    btn.onclick = () => {
+      modal.classList.add('show');
+      modal.setAttribute('aria-hidden', 'false');
+    };
+
+    closeBtn.onclick = () => {
+      modal.classList.remove('show');
+      modal.setAttribute('aria-hidden', 'true');
+    };
+
+    window.onclick = (event) => {
+      if (event.target === modal) {
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+      }
+    };
+  </script>
+
+</body>
+</html>

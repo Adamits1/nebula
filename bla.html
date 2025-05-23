@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Yellow Test</title>
+  <style>
+    body {
+      background: #0f0c29; /* dark background */
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .neon-yellow {
+      color: #fff933;
+      font-size: 1.8rem;
+      font-weight: 700;
+      max-width: 700px;
+      line-height: 1.4;
+      user-select: none;
+      text-shadow:
+        0 0 5px #fff933,
+        0 0 10px #fff933,
+        0 0 20px #fff933,
+        0 0 30px #fff600,
+        0 0 40px #fff600,
+        0 0 55px #fff700,
+        0 0 75px #fff700;
+      animation: neonPulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes neonPulse {
+      0%, 100% {
+        text-shadow:
+          0 0 5px #fff933,
+          0 0 10px #fff933,
+          0 0 20px #fff933,
+          0 0 30px #fff600,
+          0 0 40px #fff600,
+          0 0 55px #fff700,
+          0 0 75px #fff700;
+      }
+      50% {
+        text-shadow:
+          0 0 8px #fff933,
+          0 0 15px #fff933,
+          0 0 30px #fff933,
+          0 0 45px #fff600,
+          0 0 60px #fff600,
+          0 0 75px #fff700,
+          0 0 90px #fff700;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="neon-yellow">
+    Make sure to uninstall all antiviruses and disable windows defender before downloading!
+  </p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redeem - Nebula Software</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark-theme">
+
+  <nav class="navbar">
+    <div class="logo">Nebula</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="redeem.html" class="active">Redeem</a></li>
+      <li><a href="buy.html">Buy</a></li>
+    </ul>
+  </nav>
+
+  <main class="container center-content">
+    <h1 class="fade-in">Redeem Your License Key</h1>
+    <p class="fade-in delay-1">Enter your license key below to unlock the customer dashboard.</p>
+
+    <input type="text" id="licenseKey" placeholder="Enter license key" class="input-field fade-in delay-2" />
+    <button class="btn neon-button fade-in delay-3" onclick="redeemKey()">Redeem</button>
+
+    <div id="redeemMessage" class="message hidden"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
